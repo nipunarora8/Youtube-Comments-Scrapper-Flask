@@ -18,7 +18,7 @@ def predict():
         
         
     
-        api_key ="----------your youtube api link---------------------"
+        api_key ="----------your youtube api---------------------"
         yt = build('youtube','v3',developerKey=api_key)
         
         query = request.form['input-url']
