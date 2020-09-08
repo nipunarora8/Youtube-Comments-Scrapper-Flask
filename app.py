@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 
-cluster = MongoClient("mongodb+srv://abcd:qwertyuiop@cluster0.0ihqm.mongodb.net/youtube?retryWrites=true&w=majority")
+cluster = MongoClient("--------your mongo db client connetion link----------------------")
 db=cluster['youtube']
 collection=db['comments']
 
@@ -18,7 +18,7 @@ def predict():
         
         
     
-        api_key ="AIzaSyCsPMHTcxoZjEEn5_a68ow3PERq-2Negng"
+        api_key ="----------your youtube api link---------------------"
         yt = build('youtube','v3',developerKey=api_key)
         
         query = request.form['input-url']
